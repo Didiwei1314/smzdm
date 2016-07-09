@@ -17,3 +17,26 @@ $dark:                            #444 !default;
 
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
+#price{
+  //background: red;
+  .ion-slide-box{
+    .ion-slide{
+      img{
+        display: block;
+        width: 100%;
+        height:100%;
+      }
+    }
+  }
+
+  .myp-tab{
+    //background: red;
+    width: 100%;
+    text-align: center;
+    border-bottom:1px soild red;
+
+    .myp-active{
+
+    }
+  }
+}

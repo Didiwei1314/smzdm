@@ -1,8 +1,28 @@
-<ion-pane>
+<ion-pane id="price">
   <ion-header-bar class="bar-assertive ">
     <span>什么值得买</span>
   </ion-header-bar>
   <ion-content class="padding">
-    好价
+
+    <ion-slide-box class="ion-slide-box" on-slide-changed="slideHasChanged($index)">
+      <ion-slide class="ion-slide">
+        <img src="../img/price/swiper1.gif" />
+      </ion-slide>
+      <ion-slide>
+        <img src="http://placehold.it/320X131" />
+      </ion-slide>
+      <ion-slide>
+        <img src="http://placehold.it/320X131" />
+      </ion-slide>
+    </ion-slide-box>
+
+  <!--tab标签切换-->
+<div class="row myp-tab">
+  <div class="col myp-active">发现</div>
+  <div class="col">精选</div>
+  <div class="col">国内</div>
+  <div class="col">海陶</div>
+</div>
+
   </ion-content>
 </ion-pane>

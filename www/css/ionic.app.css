@@ -9879,6 +9879,16 @@ $assertive:                       #ef473a !default;
 $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
+#price .ion-slide-box .ion-slide img {
+  display: block;
+  width: 100%;
+  height: 100%; }
+
+#price .myp-tab {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px soild red; }
+
 /*
 To customize the look and feel of Ionic, you can override the variables
 in ionic's _variables.scss file.
