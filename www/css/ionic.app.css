@@ -9847,6 +9847,29 @@ $assertive:                       #ef473a !default;
 $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
+.art .header {
+  display: flex;
+  text-align: center;
+  line-height: 34px; }
+  .art .header i {
+    flex: 1; }
+  .art .header label {
+    width: 70%;
+    height: 30px;
+    padding-top: 2px; }
+    .art .header label i {
+      line-height: 30px;
+      color: #333;
+      background: white;
+      height: 30px;
+      border: none; }
+    .art .header label input {
+      width: 100%;
+      height: 30px; }
+
+.art .anav {
+  text-align: center; }
+
 /*
 To customize the look and feel of Ionic, you can override the variables
 in ionic's _variables.scss file.
