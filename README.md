@@ -1,2 +1,0 @@
-# smzdm
-Our team project
