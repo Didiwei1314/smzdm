@@ -1,0 +1,107 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'E:\\AAAAAAAAA\\gulp\\node.exe',
+1 verbose cli   'E:\\AAAAAAAAA\\gulp\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'gulp.js' ]
+2 info using npm@2.15.1
+3 info using node@v4.4.4
+4 verbose install initial load of D:\workspace\smzdm\package.json
+5 warn package.json smzdm@1.1.1 No repository field.
+6 warn package.json smzdm@1.1.1 No README data
+7 warn package.json smzdm@1.1.1 No license field.
+8 verbose installManyTop reading scoped package data from D:\workspace\smzdm\node_modules\bower\package.json
+9 verbose installManyTop reading scoped package data from D:\workspace\smzdm\node_modules\gulp\package.json
+10 verbose installManyTop reading scoped package data from D:\workspace\smzdm\node_modules\gulp-concat\package.json
+11 verbose installManyTop reading scoped package data from D:\workspace\smzdm\node_modules\gulp-minify-css\package.json
+12 verbose installManyTop reading scoped package data from D:\workspace\smzdm\node_modules\gulp-rename\package.json
+13 verbose installManyTop reading scoped package data from D:\workspace\smzdm\node_modules\gulp-sass\package.json
+14 verbose installManyTop reading scoped package data from D:\workspace\smzdm\node_modules\gulp-util\package.json
+15 verbose installManyTop reading scoped package data from D:\workspace\smzdm\node_modules\shelljs\package.json
+16 info package.json gulp-minify-css@1.2.4 No repository field.
+17 info package.json gulp-rename@1.2.2 No license field.
+18 verbose readDependencies loading dependencies from D:\workspace\smzdm\package.json
+19 silly cache add args [ 'gulp.js', null ]
+20 verbose cache add spec gulp.js
+21 silly cache add parsed spec Result {
+21 silly cache add   raw: 'gulp.js',
+21 silly cache add   scope: null,
+21 silly cache add   name: 'gulp.js',
+21 silly cache add   rawSpec: '',
+21 silly cache add   spec: 'latest',
+21 silly cache add   type: 'tag' }
+22 silly addNamed gulp.js@latest
+23 verbose addNamed "latest" is being treated as a dist-tag for gulp.js
+24 info addNameTag [ 'gulp.js', 'latest' ]
+25 silly mapToRegistry name gulp.js
+26 silly mapToRegistry using default registry
+27 silly mapToRegistry registry https://registry.npmjs.org/
+28 silly mapToRegistry data Result {
+28 silly mapToRegistry   raw: 'gulp.js',
+28 silly mapToRegistry   scope: null,
+28 silly mapToRegistry   name: 'gulp.js',
+28 silly mapToRegistry   rawSpec: '',
+28 silly mapToRegistry   spec: 'latest',
+28 silly mapToRegistry   type: 'tag' }
+29 silly mapToRegistry uri https://registry.npmjs.org/gulp.js
+30 verbose addNameTag registry:https://registry.npmjs.org/gulp.js not in flight; fetching
+31 verbose request uri https://registry.npmjs.org/gulp.js
+32 verbose request no auth needed
+33 info attempt registry request try #1 at 10:46:29
+34 verbose request id f4049d2bea35dd4a
+35 http request GET https://registry.npmjs.org/gulp.js
+36 http 404 https://registry.npmjs.org/gulp.js
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=0',
+37 verbose headers   'content-length': '2',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Sun, 10 Jul 2016 02:46:32 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   age: '0',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-itm7425-ITM',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1468118792.760353,VS0,VE152',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 silly get cb [ 404,
+38 silly get   { 'content-type': 'application/json',
+38 silly get     'cache-control': 'max-age=0',
+38 silly get     'content-length': '2',
+38 silly get     'accept-ranges': 'bytes',
+38 silly get     date: 'Sun, 10 Jul 2016 02:46:32 GMT',
+38 silly get     via: '1.1 varnish',
+38 silly get     age: '0',
+38 silly get     connection: 'keep-alive',
+38 silly get     'x-served-by': 'cache-itm7425-ITM',
+38 silly get     'x-cache': 'MISS',
+38 silly get     'x-cache-hits': '0',
+38 silly get     'x-timer': 'S1468118792.760353,VS0,VE152',
+38 silly get     vary: 'Accept-Encoding' } ]
+39 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/gulp.js
+39 verbose stack     at makeError (E:\AAAAAAAAA\gulp\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+39 verbose stack     at CachingRegistryClient.<anonymous> (E:\AAAAAAAAA\gulp\node_modules\npm\node_modules\npm-registry-client\lib\request.js:242:14)
+39 verbose stack     at Request._callback (E:\AAAAAAAAA\gulp\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+39 verbose stack     at Request.self.callback (E:\AAAAAAAAA\gulp\node_modules\npm\node_modules\request\request.js:199:22)
+39 verbose stack     at emitTwo (events.js:87:13)
+39 verbose stack     at Request.emit (events.js:172:7)
+39 verbose stack     at Request.<anonymous> (E:\AAAAAAAAA\gulp\node_modules\npm\node_modules\request\request.js:1036:10)
+39 verbose stack     at emitOne (events.js:82:20)
+39 verbose stack     at Request.emit (events.js:169:7)
+39 verbose stack     at IncomingMessage.<anonymous> (E:\AAAAAAAAA\gulp\node_modules\npm\node_modules\request\request.js:963:12)
+40 verbose statusCode 404
+41 verbose pkgid gulp.js
+42 verbose cwd D:\workspace\smzdm
+43 error Windows_NT 6.1.7601
+44 error argv "E:\\AAAAAAAAA\\gulp\\node.exe" "E:\\AAAAAAAAA\\gulp\\node_modules\\npm\\bin\\npm-cli.js" "install" "gulp.js"
+45 error node v4.4.4
+46 error npm  v2.15.1
+47 error code E404
+48 error 404 Registry returned 404 for GET on https://registry.npmjs.org/gulp.js
+48 error 404
+48 error 404 'gulp.js' is not in the npm registry.
+48 error 404 You should bug the author to publish it (or use the name yourself!)
+48 error 404 It was specified as a dependency of 'smzdm'
+48 error 404
+48 error 404 Note that you can also install from a
+48 error 404 tarball, folder, http url, or git url.
+49 verbose exit [ 1, true ]

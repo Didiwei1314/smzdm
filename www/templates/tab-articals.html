@@ -1,4 +1,4 @@
-<ion-pane class="art">
+<ion-pane class="artee" ng-controller="ArticalsCtrl">
    <!-- 头部  t -->
   <ion-header-bar class="bar-assertive header">
     <i>筛选</i>
@@ -10,16 +10,11 @@
     <i >关注</i>
   </ion-header-bar>
   <!-- 内容区 -->
-  <ion-content>
-    <ion-slide-box  auto-play="true" does-continue="true">
-      <ion-slide>
-          <p><img src="http://placehold.it/320x160" /></p>
-      </ion-slide>
-      <ion-slide>
-          <p><img src="http://placehold.it/320x160" /></p>
-      </ion-slide>
-      <ion-slide>
-          <p><img src="http://placehold.it/320x160" /></p>
+          <!-- 轮播图 -->
+  <ion-content class="content">
+    <ion-slide-box  auto-play="true" does-continue="true" class="slides" slide-interval="3000">
+      <ion-slide ng-repeat="lun in lunbo" class="slide">
+          <p><img ng-src={{lun.imgsrc}} style="display:block;width:100%;" /></p>
       </ion-slide>
     </ion-slide-box>
     <!-- 中间导航部分nav -->
