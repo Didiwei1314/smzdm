@@ -9877,10 +9877,13 @@ $dark:                            #444 !default;
 
 .goods .size {
   font-size: 24px;
-  line-height: 44px; }
+  line-height: 42px; }
 
 .goods .toplist {
   text-align: center; }
+
+.goods .pics img {
+  width: 100%; }
 
 /*
 To customize the look and feel of Ionic, you can override the variables
