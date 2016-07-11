@@ -1,4 +1,4 @@
-<ion-pane class="artee" ng-controller="ArticalsCtrl">
+<ion-pane id="art" >
    <!-- 头部  t -->
   <ion-header-bar class="bar-assertive header">
     <i>筛选</i>
@@ -13,54 +13,24 @@
           <!-- 轮播图 -->
   <ion-content class="content">
     <ion-slide-box  auto-play="true" does-continue="true" class="slides" slide-interval="3000">
-      <ion-slide ng-repeat="lun in lunbo" class="slide">
+      <ion-slide ng-repeat="lun in lunbo track by $index"  class="slide" >
           <p><img ng-src={{lun.imgsrc}} style="display:block;width:100%;" /></p>
       </ion-slide>
     </ion-slide-box>
     <!-- 中间导航部分nav -->
     <ul class="row list anav">
-      <li class="col ">
-        <i><img src="http://placehold.it/40x40"></i>
-        原创
-      </li>
-      <li class="col">
-        <i><img src="http://placehold.it/40x40"></i>
-        原创
-      </li>
-      <li class="col">
-        <i><img src="http://placehold.it/40x40"></i>
-        原创
-      </li>
-      <li class="col">
-        <i><img src="http://placehold.it/40x40"></i>
-        原创
-      </li>
-      <li class="col">
-        <i><img src="http://placehold.it/40x40"></i>
-        原创
+      <li class="col" ng-repeat="nav in artnav">
+        <i><img ng-src={{nav.imgsrc}} class="row"></i>
+        <span class="row">原创</span>
       </li>
     </ul>
     <!-- 各个分标签 -->
-    <h6 class="item-divider">值无不言</h6>
-    <ion-scroll zooming="true" direction="x" scrollbar-x="false">
-      <ul class="row" direction="x">
-        <li class="padding">
-          <i><img src="http://placehold.it/80x140"></i>
-        </li>
-        <li class="padding">
-          <i><img src="http://placehold.it/80x140"></i>
-        </li>
-        <li class="padding">
-          <i><img src="http://placehold.it/80x140"></i>
-        </li>
-        <li class="padding">
-          <i><img src="http://placehold.it/80x140"></i>
-        </li>
-        <li class="padding">
-          <i><img src="http://placehold.it/80x140"></i>
-        </li>
-        <li class="padding">
-          <i><img src="http://placehold.it/80x140"></i>
+    <h6 class="item-divider padding h6">值无不言</h6>
+    <ion-scroll direction="x" scrollbar-x="false">
+      <ul class="row ionxul" direction="x">
+        <li class="padding" ng-repeat="X in navX">
+          <i><img ng-src={{X.imgsrc}}></i>
+          <i>{{X.imgart}}</i>
         </li>
       </ul>
     </ion-scroll>

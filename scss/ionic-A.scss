@@ -16,59 +16,93 @@ $dark:                            #444 !default;
 */
 
 // The path for our ionicons font files, relative to the built CSS in www/css
-// $ionicons-font-path: "../lib/ionic/fonts" !default;
-html,body{
-  font-size: 100px;
-}
+$ionicons-font-path: "../lib/ionic/fonts" !default;
 
-// .artee{
-//   width:100%;
-//     .header{
-//       display: flex;
-//       text-align: center;
-//       line-height: 34px;
-//       i{
-//         flex:1;
-//       }
-//       label{
-//         width:70%;
-//         height:34px;
-//         padding-top:2px;
-//         i{
-//           line-height: 30px;
-//           color:#333;
-//           background:white;
-//           height:30px;
-//           border:none;
-//         }
-//         input{
-//           width:100%;
-//           height: 15px;
-//
-//         }
-//       }
-//     }
-//     .content{
-//       width:100%;
-//       .slides{
-//         .slider-pager{
-//           bottom:10px;
-//           height:8px;
-//           text-align: right;
-//           .slider-pager-page{
-//             width:10px;
-//             &.active{
-//               color:#f00;
-//             }
-//             .ion-record{
-//               font-size:12px;
-//             }
-//           }
-//         }
-//       }
-//
-//       .anav{
-//         text-align: center;
-//       }
-//     }
-// }
+// 每个分支不同的名字，以免冲突。
+#art{
+  width:100%;
+      // 头部样式，class名为header
+    .header{
+      display: flex;
+      text-align: center;
+      line-height: 34px;
+      i{
+        flex:1;
+      }
+      label{
+        width:70%;
+        height:34px;
+        padding-top:2px;
+        i{
+          line-height: 30px;
+          color:#333;
+          background:white;
+          height:30px;
+          border:none;
+        }
+        input{
+          width:100%;
+          height: 30px;
+        }
+      }
+    }
+    // 中间内容区
+    .content{
+      width:100%;
+      .slides{
+          //  控制小圆点的位置
+        .slider-pager{
+          bottom:30px;
+          height:8px;
+          text-align: right;
+          .slider-pager-page{
+            width:10px;
+            &.active{
+              color:#f00;
+            }
+            .ion-record{
+              font-size:12px;
+            }
+          }
+        }
+
+      }
+       // 中间导航部分 样式
+      .anav{
+        display: flex;
+        li{
+          flex: 1;
+          i{
+
+            display: block;
+            img{
+              display: block;
+            }
+          }
+          span{
+            display: block;
+            text-align: center;
+          }
+        }
+      }
+      // 各个分区；
+      .h6{
+        font-size:14px;
+      }
+      .ionxul{
+        li{
+          i{
+            &:first-child{
+              img{
+                display: block;
+                width:8rem;
+              }
+            }
+            &:nth-child(2){
+              padding-top:1rem;
+            }
+          }
+        }
+      }
+    }
+}
