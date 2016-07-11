@@ -9980,3 +9980,8 @@ $dark:                            #444 !default;
     margin-left: 10px; }
   .my .my-midlle .margin-top {
     margin-top: 10px; }
+
+ion-tabs .tab-item .icon {
+  font-size: 24px;
+  text-align: center;
+  line-height: 32px; }

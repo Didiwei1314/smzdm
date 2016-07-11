@@ -46,7 +46,7 @@
       -webkit-text-stroke-width: 0.2px;
       -moz-osx-font-smoothing: grayscale;}
 
-      .icon-shouye:before { content: "\e654"; }
+.icon-shouye:before { content: "\e654"; }
 .icon-shandian:before { content: "\e663"; }
 .icon-shangpin:before { content: "\e61e"; }
 .icon-wenzhang:before { content: "\e6be"; }
