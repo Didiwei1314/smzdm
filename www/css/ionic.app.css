@@ -9847,22 +9847,37 @@ $assertive:                       #ef473a !default;
 $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
-/*
-To customize the look and feel of Ionic, you can override the variables
-in ionic's _variables.scss file.
+.art .header {
+  display: flex;
+  text-align: center;
+  line-height: 34px; }
+  .art .header i {
+    flex: 1; }
+  .art .header label {
+    width: 70%;
+    height: 30px;
+    padding-top: 2px; }
+    .art .header label i {
+      line-height: 30px;
+      color: #333;
+      background: white;
+      height: 30px;
+      border: none; }
+    .art .header label input {
+      width: 100%;
+      height: 30px; }
 
-For example, you might change some of the default colors:
+.art .anav {
+  text-align: center; }
 
-$light:                           #fff !default;
-$stable:                          #f8f8f8 !default;
-$positive:                        #387ef5 !default;
-$calm:                            #11c1f3 !default;
-$balanced:                        #33cd5f !default;
-$energized:                       #ffc900 !default;
-$assertive:                       #ef473a !default;
-$royal:                           #886aea !default;
-$dark:                            #444 !default;
-*/
+.goods .h1 {
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff; }
+
+.goods .toplist {
+  text-align: center; }
+
 /*
 To customize the look and feel of Ionic, you can override the variables
 in ionic's _variables.scss file.
@@ -9905,3 +9920,56 @@ $assertive:                       #ef473a !default;
 $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
+.my .my-bottom {
+  background: #eee;
+  min-height: 200px;
+  text-align: center;
+  line-height: 200px; }
+
+.my .my-tab {
+  width: 100%;
+  height: 45px;
+  font-size: 12px;
+  text-align: center; }
+  .my .my-tab > div.active {
+    color: red;
+    border-bottom: 1px solid red; }
+
+.my .col-67 {
+  padding: 0; }
+  .my .col-67 .col-lis {
+    height: 55px; }
+  .my .col-67 .row {
+    padding: 0; }
+  .my .col-67 .col {
+    padding: 0; }
+  .my .col-67 img {
+    display: inline-block;
+    line-height: 20px; }
+  .my .col-67 span {
+    font-size: 14px; }
+  .my .col-67 p {
+    font-size: 7px;
+    color: #8d8d8d; }
+
+.my .col-avatar {
+  text-align: center; }
+  .my .col-avatar img {
+    border-radius: 50%; }
+  .my .col-avatar span {
+    color: red; }
+
+.my .my-midlle {
+  width: 100%;
+  height: 144px;
+  background: #eee; }
+  .my .my-midlle .midlle-box {
+    background: #fff;
+    height: 55px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 12px; }
+  .my .my-midlle .margin-left {
+    margin-left: 10px; }
+  .my .my-midlle .margin-top {
+    margin-top: 10px; }
